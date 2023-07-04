@@ -1,0 +1,9 @@
+<h1>All Beers</h1>
+
+<ul>
+  <% beers.forEach(beer => { %>
+    <li>
+      <%- include('./partials/beer', { beer: beer }) %>
+    </li>
+  <% }); %>
+</ul>
